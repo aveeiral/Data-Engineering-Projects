@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE POWERMART SYSTEM "powrmart.dtd">
+<POWERMART CREATION_DATE="12/07/2020 23:59:38" REPOSITORY_VERSION="187.96">
+<REPOSITORY NAME="Powercenter_Repo_Service" VERSION="187" CODEPAGE="UTF-8" DATABASETYPE="Microsoft SQL Server">
+<FOLDER NAME="AVIRAL" GROUP="" OWNER="CAIA5_Training7" SHARED="NOTSHARED" DESCRIPTION="" PERMISSIONS="rwx---r--" UUID="98b448c5-f027-4c2a-8837-26ff68fee923">
+    <SOURCE BUSINESSNAME ="" DATABASETYPE ="Microsoft SQL Server" DBDNAME ="S_Aviral_RALLI" DESCRIPTION ="" NAME ="CustomerComplaintDetail" OBJECTVERSION ="1" OWNERNAME ="dbo" VERSIONNUMBER ="1">
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="float" DESCRIPTION ="" FIELDNUMBER ="1" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="24" LEVEL ="0" NAME ="CustomerComplaintDetail_ID" NULLABLE ="NULL" OCCURS ="0" OFFSET ="0" PHYSICALLENGTH ="15" PHYSICALOFFSET ="0" PICTURETEXT ="" PRECISION ="15" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="float" DESCRIPTION ="" FIELDNUMBER ="2" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="24" LEVEL ="0" NAME ="CustomerComplaintID" NULLABLE ="NULL" OCCURS ="0" OFFSET ="24" PHYSICALLENGTH ="15" PHYSICALOFFSET ="15" PICTURETEXT ="" PRECISION ="15" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="nvarchar" DESCRIPTION ="" FIELDNUMBER ="3" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="0" LEVEL ="0" NAME ="ComplaintStatus" NULLABLE ="NULL" OCCURS ="0" OFFSET ="48" PHYSICALLENGTH ="255" PHYSICALOFFSET ="30" PICTURETEXT ="" PRECISION ="255" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="nvarchar" DESCRIPTION ="" FIELDNUMBER ="4" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="0" LEVEL ="0" NAME ="ComplaintType" NULLABLE ="NULL" OCCURS ="0" OFFSET ="48" PHYSICALLENGTH ="255" PHYSICALOFFSET ="285" PICTURETEXT ="" PRECISION ="255" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="nvarchar" DESCRIPTION ="" FIELDNUMBER ="5" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="0" LEVEL ="0" NAME ="ActionType" NULLABLE ="NULL" OCCURS ="0" OFFSET ="48" PHYSICALLENGTH ="255" PHYSICALOFFSET ="540" PICTURETEXT ="" PRECISION ="255" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="varchar" DESCRIPTION ="" FIELDNUMBER ="6" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="0" LEVEL ="0" NAME ="Description" NULLABLE ="NULL" OCCURS ="0" OFFSET ="48" PHYSICALLENGTH ="3000" PHYSICALOFFSET ="795" PICTURETEXT ="" PRECISION ="3000" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="varchar" DESCRIPTION ="" FIELDNUMBER ="7" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="0" LEVEL ="0" NAME ="ShortDescription" NULLABLE ="NULL" OCCURS ="0" OFFSET ="48" PHYSICALLENGTH ="255" PHYSICALOFFSET ="3795" PICTURETEXT ="" PRECISION ="255" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="float" DESCRIPTION ="" FIELDNUMBER ="8" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="24" LEVEL ="0" NAME ="IsVehicleOperable" NULLABLE ="NULL" OCCURS ="0" OFFSET ="48" PHYSICALLENGTH ="15" PHYSICALOFFSET ="4050" PICTURETEXT ="" PRECISION ="15" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="float" DESCRIPTION ="" FIELDNUMBER ="9" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="24" LEVEL ="0" NAME ="IsTow" NULLABLE ="NULL" OCCURS ="0" OFFSET ="72" PHYSICALLENGTH ="15" PHYSICALOFFSET ="4065" PICTURETEXT ="" PRECISION ="15" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="float" DESCRIPTION ="" FIELDNUMBER ="10" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="24" LEVEL ="0" NAME ="ServiceLocationID" NULLABLE ="NULL" OCCURS ="0" OFFSET ="96" PHYSICALLENGTH ="15" PHYSICALOFFSET ="4080" PICTURETEXT ="" PRECISION ="15" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="smalldatetime" DESCRIPTION ="" FIELDNUMBER ="11" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="19" LEVEL ="0" NAME ="CreateDate" NULLABLE ="NULL" OCCURS ="0" OFFSET ="120" PHYSICALLENGTH ="19" PHYSICALOFFSET ="4095" PICTURETEXT ="" PRECISION ="19" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="smalldatetime" DESCRIPTION ="" FIELDNUMBER ="12" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="19" LEVEL ="0" NAME ="ComplaintCloseDate" NULLABLE ="NULL" OCCURS ="0" OFFSET ="139" PHYSICALLENGTH ="19" PHYSICALOFFSET ="4114" PICTURETEXT ="" PRECISION ="19" SCALE ="0" USAGE_FLAGS =""/>
+        <SOURCEFIELD BUSINESSNAME ="" DATATYPE ="float" DESCRIPTION ="" FIELDNUMBER ="13" FIELDPROPERTY ="0" FIELDTYPE ="ELEMITEM" HIDDEN ="NO" KEYTYPE ="NOT A KEY" LENGTH ="24" LEVEL ="0" NAME ="CreatedByUserID" NULLABLE ="NULL" OCCURS ="0" OFFSET ="158" PHYSICALLENGTH ="15" PHYSICALOFFSET ="4133" PICTURETEXT ="" PRECISION ="15" SCALE ="0" USAGE_FLAGS =""/>
+    </SOURCE>
+    <TARGET BUSINESSNAME ="" CONSTRAINT ="" DATABASETYPE ="Microsoft SQL Server" DESCRIPTION ="" NAME ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" OBJECTVERSION ="1" TABLEOPTIONS ="" VERSIONNUMBER ="1">
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="int" DESCRIPTION ="" FIELDNUMBER ="1" KEYTYPE ="NOT A KEY" NAME ="CustomerComplaintDetail_KEY" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="10" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="int" DESCRIPTION ="" FIELDNUMBER ="2" KEYTYPE ="NOT A KEY" NAME ="CustomerComplaintDetail_ID" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="10" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="int" DESCRIPTION ="" FIELDNUMBER ="3" KEYTYPE ="NOT A KEY" NAME ="CustomerComplaint_KEY" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="10" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="int" DESCRIPTION ="" FIELDNUMBER ="4" KEYTYPE ="NOT A KEY" NAME ="ComplaintStatus" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="10" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="int" DESCRIPTION ="" FIELDNUMBER ="5" KEYTYPE ="NOT A KEY" NAME ="ComplaintType" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="10" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="int" DESCRIPTION ="" FIELDNUMBER ="6" KEYTYPE ="NOT A KEY" NAME ="ActionType" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="10" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="varchar" DESCRIPTION ="" FIELDNUMBER ="7" KEYTYPE ="NOT A KEY" NAME ="Description" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="3000" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="varchar" DESCRIPTION ="" FIELDNUMBER ="8" KEYTYPE ="NOT A KEY" NAME ="ShortDescription" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="255" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="varchar" DESCRIPTION ="" FIELDNUMBER ="9" KEYTYPE ="NOT A KEY" NAME ="IsVehicleOperable" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="15" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="varchar" DESCRIPTION ="" FIELDNUMBER ="10" KEYTYPE ="NOT A KEY" NAME ="IsTow" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="15" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="int" DESCRIPTION ="" FIELDNUMBER ="11" KEYTYPE ="NOT A KEY" NAME ="ServiceLocation_KEY" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="10" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="varchar" DESCRIPTION ="" FIELDNUMBER ="12" KEYTYPE ="NOT A KEY" NAME ="CreateDate" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="255" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="varchar" DESCRIPTION ="" FIELDNUMBER ="13" KEYTYPE ="NOT A KEY" NAME ="ComplaintCloseDate" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="255" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="int" DESCRIPTION ="" FIELDNUMBER ="14" KEYTYPE ="NOT A KEY" NAME ="CreatedByUser_KEY" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="10" SCALE ="0"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="datetime" DESCRIPTION ="" FIELDNUMBER ="15" KEYTYPE ="NOT A KEY" NAME ="DW_CreatedDate" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="23" SCALE ="3"/>
+        <TARGETFIELD BUSINESSNAME ="" DATATYPE ="datetime" DESCRIPTION ="" FIELDNUMBER ="16" KEYTYPE ="NOT A KEY" NAME ="DW_UpdatedDate" NULLABLE ="NULL" PICTURETEXT ="" PRECISION ="23" SCALE ="3"/>
+    </TARGET>
+    <MAPPING DESCRIPTION ="" ISVALID ="YES" NAME ="mapping_ralli_infa_CustomerComplaintDetail" OBJECTVERSION ="1" VERSIONNUMBER ="1">
+        <TRANSFORMATION DESCRIPTION ="" NAME ="SQ_CustomerComplaintDetail" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Source Qualifier" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="double" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CustomerComplaintDetail_ID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="15" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="double" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CustomerComplaintID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="15" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ComplaintStatus" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ComplaintType" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ActionType" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Description" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="3000" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ShortDescription" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="double" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="IsVehicleOperable" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="15" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="double" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="IsTow" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="15" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="double" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ServiceLocationID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="15" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CreateDate" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="29" SCALE ="9"/>
+            <TRANSFORMFIELD DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ComplaintCloseDate" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="29" SCALE ="9"/>
+            <TRANSFORMFIELD DATATYPE ="double" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CreatedByUserID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="15" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Sql Query" VALUE ="SELECT CustomerComplaintDetail.CustomerComplaintDetail_ID, CustomerComplaintDetail.CustomerComplaintID, CustomerComplaintDetail.ComplaintStatus, CustomerComplaintDetail.ComplaintType, CustomerComplaintDetail.ActionType, CustomerComplaintDetail.Description, CustomerComplaintDetail.ShortDescription, CustomerComplaintDetail.IsVehicleOperable, CustomerComplaintDetail.IsTow, CustomerComplaintDetail.ServiceLocationID, CustomerComplaintDetail.CreateDate, CustomerComplaintDetail.ComplaintCloseDate, CustomerComplaintDetail.CreatedByUserID &#xD;&#xA;FROM&#xD;&#xA; RALLI.[dbo].CustomerComplaintDetail&#xD;&#xA;WHERE CustomerComplaintDetail.CreateDate &gt;cast($$v_last_max_date as date)"/>
+            <TABLEATTRIBUTE NAME ="User Defined Join" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Number Of Sorted Ports" VALUE ="0"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Select Distinct" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Is Partitionable" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre SQL" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Post SQL" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Output is deterministic" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output is repeatable" VALUE ="Never"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="lkp_customerComplaint" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Lookup Procedure" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CustomerComplaint_KEY" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CustomerComplaintID" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="src_CustomerComplaintID1" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Lookup Sql Override" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup table name" VALUE ="FACT_RALLI_INFA_CustomerComplaint_ARajeev"/>
+            <TABLEATTRIBUTE NAME ="Lookup Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup caching enabled" VALUE ="YES"/>
+            <TABLEATTRIBUTE NAME ="Lookup policy on multiple match" VALUE ="Use Any Value"/>
+            <TABLEATTRIBUTE NAME ="Lookup condition" VALUE ="CustomerComplaintID = src_CustomerComplaintID1"/>
+            <TABLEATTRIBUTE NAME ="Connection Information" VALUE ="$Target"/>
+            <TABLEATTRIBUTE NAME ="Source Type" VALUE ="Database"/>
+            <TABLEATTRIBUTE NAME ="Recache if Stale" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache directory name" VALUE ="$PMCacheDir"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache initialize" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache persistent" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup Data Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Lookup Index Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Dynamic Lookup Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Synchronize Dynamic Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output Old Value On Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Dynamic Cache Condition" VALUE ="TRUE"/>
+            <TABLEATTRIBUTE NAME ="Cache File Name Prefix" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Re-cache from lookup source" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Insert Else Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Else Insert" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Datetime Format" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+            <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+            <TABLEATTRIBUTE NAME ="Case Sensitive String Comparison" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Null ordering" VALUE ="Null Is Highest Value"/>
+            <TABLEATTRIBUTE NAME ="Sorted Input" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup source is static" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre-build lookup cache" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Subsecond Precision" VALUE ="6"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="lkp_ComplaintStatus" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Lookup Procedure" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="complaintStatus" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ComplaintStatus_KEY" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="src_ComplaintStatus1" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Lookup Sql Override" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup table name" VALUE ="junk_fact_CustomerComplaint_ComplaintStatus"/>
+            <TABLEATTRIBUTE NAME ="Lookup Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup caching enabled" VALUE ="YES"/>
+            <TABLEATTRIBUTE NAME ="Lookup policy on multiple match" VALUE ="Use Any Value"/>
+            <TABLEATTRIBUTE NAME ="Lookup condition" VALUE ="complaintStatus = src_ComplaintStatus1"/>
+            <TABLEATTRIBUTE NAME ="Connection Information" VALUE ="$Target"/>
+            <TABLEATTRIBUTE NAME ="Source Type" VALUE ="Database"/>
+            <TABLEATTRIBUTE NAME ="Recache if Stale" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache directory name" VALUE ="$PMCacheDir"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache initialize" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache persistent" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup Data Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Lookup Index Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Dynamic Lookup Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Synchronize Dynamic Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output Old Value On Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Dynamic Cache Condition" VALUE ="TRUE"/>
+            <TABLEATTRIBUTE NAME ="Cache File Name Prefix" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Re-cache from lookup source" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Insert Else Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Else Insert" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Datetime Format" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+            <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+            <TABLEATTRIBUTE NAME ="Case Sensitive String Comparison" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Null ordering" VALUE ="Null Is Highest Value"/>
+            <TABLEATTRIBUTE NAME ="Sorted Input" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup source is static" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre-build lookup cache" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Subsecond Precision" VALUE ="6"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="lkp_ActionType" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Lookup Procedure" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ActionType" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ActionType_KEY" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ActionType1" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Lookup Sql Override" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup table name" VALUE ="junk_fact_CustomerComplaint_ActionType"/>
+            <TABLEATTRIBUTE NAME ="Lookup Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup caching enabled" VALUE ="YES"/>
+            <TABLEATTRIBUTE NAME ="Lookup policy on multiple match" VALUE ="Use Any Value"/>
+            <TABLEATTRIBUTE NAME ="Lookup condition" VALUE ="ActionType = ActionType1"/>
+            <TABLEATTRIBUTE NAME ="Connection Information" VALUE ="$Target"/>
+            <TABLEATTRIBUTE NAME ="Source Type" VALUE ="Database"/>
+            <TABLEATTRIBUTE NAME ="Recache if Stale" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache directory name" VALUE ="$PMCacheDir"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache initialize" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache persistent" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup Data Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Lookup Index Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Dynamic Lookup Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Synchronize Dynamic Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output Old Value On Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Dynamic Cache Condition" VALUE ="TRUE"/>
+            <TABLEATTRIBUTE NAME ="Cache File Name Prefix" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Re-cache from lookup source" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Insert Else Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Else Insert" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Datetime Format" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+            <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+            <TABLEATTRIBUTE NAME ="Case Sensitive String Comparison" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Null ordering" VALUE ="Null Is Highest Value"/>
+            <TABLEATTRIBUTE NAME ="Sorted Input" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup source is static" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre-build lookup cache" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Subsecond Precision" VALUE ="6"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="lkp_ComplaintType" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Lookup Procedure" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="complaintType" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ComplaintType_KEY" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ComplaintType1" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Lookup Sql Override" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup table name" VALUE ="junk_fact_CustomerComplaint_ComplaintType"/>
+            <TABLEATTRIBUTE NAME ="Lookup Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup caching enabled" VALUE ="YES"/>
+            <TABLEATTRIBUTE NAME ="Lookup policy on multiple match" VALUE ="Use Any Value"/>
+            <TABLEATTRIBUTE NAME ="Lookup condition" VALUE ="complaintType = ComplaintType1"/>
+            <TABLEATTRIBUTE NAME ="Connection Information" VALUE ="$Target"/>
+            <TABLEATTRIBUTE NAME ="Source Type" VALUE ="Database"/>
+            <TABLEATTRIBUTE NAME ="Recache if Stale" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache directory name" VALUE ="$PMCacheDir"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache initialize" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache persistent" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup Data Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Lookup Index Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Dynamic Lookup Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Synchronize Dynamic Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output Old Value On Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Dynamic Cache Condition" VALUE ="TRUE"/>
+            <TABLEATTRIBUTE NAME ="Cache File Name Prefix" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Re-cache from lookup source" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Insert Else Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Else Insert" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Datetime Format" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+            <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+            <TABLEATTRIBUTE NAME ="Case Sensitive String Comparison" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Null ordering" VALUE ="Null Is Highest Value"/>
+            <TABLEATTRIBUTE NAME ="Sorted Input" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup source is static" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre-build lookup cache" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Subsecond Precision" VALUE ="6"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="lkp_location" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Lookup Procedure" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Location_KEY" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="LocationID" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ServiceLocationID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Lookup Sql Override" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup table name" VALUE ="DIM_RALLI_INFA_Location_ARajeev"/>
+            <TABLEATTRIBUTE NAME ="Lookup Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup caching enabled" VALUE ="YES"/>
+            <TABLEATTRIBUTE NAME ="Lookup policy on multiple match" VALUE ="Use Any Value"/>
+            <TABLEATTRIBUTE NAME ="Lookup condition" VALUE ="LocationID = ServiceLocationID"/>
+            <TABLEATTRIBUTE NAME ="Connection Information" VALUE ="$Target"/>
+            <TABLEATTRIBUTE NAME ="Source Type" VALUE ="Database"/>
+            <TABLEATTRIBUTE NAME ="Recache if Stale" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache directory name" VALUE ="$PMCacheDir"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache initialize" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache persistent" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup Data Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Lookup Index Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Dynamic Lookup Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Synchronize Dynamic Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output Old Value On Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Dynamic Cache Condition" VALUE ="TRUE"/>
+            <TABLEATTRIBUTE NAME ="Cache File Name Prefix" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Re-cache from lookup source" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Insert Else Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Else Insert" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Datetime Format" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+            <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+            <TABLEATTRIBUTE NAME ="Case Sensitive String Comparison" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Null ordering" VALUE ="Null Is Highest Value"/>
+            <TABLEATTRIBUTE NAME ="Sorted Input" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup source is static" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre-build lookup cache" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Subsecond Precision" VALUE ="6"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="lkp_User" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Lookup Procedure" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="USER_KEY" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="User_ID" PICTURETEXT ="" PORTTYPE ="LOOKUP/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CreatedByUserID" PICTURETEXT ="" PORTTYPE ="INPUT/OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Lookup Sql Override" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup table name" VALUE ="DIM_RALLI_INFA_Users_ARajeev"/>
+            <TABLEATTRIBUTE NAME ="Lookup Source Filter" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Lookup caching enabled" VALUE ="YES"/>
+            <TABLEATTRIBUTE NAME ="Lookup policy on multiple match" VALUE ="Use Any Value"/>
+            <TABLEATTRIBUTE NAME ="Lookup condition" VALUE ="User_ID = CreatedByUserID"/>
+            <TABLEATTRIBUTE NAME ="Connection Information" VALUE ="$Target"/>
+            <TABLEATTRIBUTE NAME ="Source Type" VALUE ="Database"/>
+            <TABLEATTRIBUTE NAME ="Recache if Stale" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache directory name" VALUE ="$PMCacheDir"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache initialize" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup cache persistent" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup Data Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Lookup Index Cache Size" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Dynamic Lookup Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Synchronize Dynamic Cache" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Output Old Value On Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Dynamic Cache Condition" VALUE ="TRUE"/>
+            <TABLEATTRIBUTE NAME ="Cache File Name Prefix" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Re-cache from lookup source" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Insert Else Update" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Update Else Insert" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Datetime Format" VALUE =""/>
+            <TABLEATTRIBUTE NAME ="Thousand Separator" VALUE ="None"/>
+            <TABLEATTRIBUTE NAME ="Decimal Separator" VALUE ="."/>
+            <TABLEATTRIBUTE NAME ="Case Sensitive String Comparison" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Null ordering" VALUE ="Null Is Highest Value"/>
+            <TABLEATTRIBUTE NAME ="Sorted Input" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Lookup source is static" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Pre-build lookup cache" VALUE ="Auto"/>
+            <TABLEATTRIBUTE NAME ="Subsecond Precision" VALUE ="6"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="EXPTRANS" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Expression" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CustomerComplaintDetail_ID" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Description" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="3000" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ShortDescription" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="double" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="IsVehicleOperable" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="15" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="double" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="IsTow" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="15" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CreateDate" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="29" SCALE ="9"/>
+            <TRANSFORMFIELD DATATYPE ="date/time" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ComplaintCloseDate" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="29" SCALE ="9"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="CustomerComplaint_KEY" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ComplaintStatus_KEY" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ActionType_KEY" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="USER_KEY" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="Location_KEY" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="" DESCRIPTION ="" NAME ="ComplaintType_KEY" PICTURETEXT ="" PORTTYPE ="INPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(CustomerComplaintDetail_ID),-1,CustomerComplaintDetail_ID)" EXPRESSIONTYPE ="GENERAL" NAME ="o_CustomerComplaintDetail_ID" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(Description),&apos;UNK&apos;,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,Description,&apos;-&apos;,&apos; &apos;),&apos;*&apos;,&apos;&apos;),&apos;&amp;&apos;,&apos;&apos;),&apos;.&apos;,&apos; &apos;),&apos;#&apos;,&apos;&apos;),&apos;&quot;&apos;,&apos;&apos;),&apos;/&apos;,&apos;&apos;),&apos;!&apos;,&apos;&apos;),&apos;@&apos;,&apos;&apos;))" EXPRESSIONTYPE ="GENERAL" NAME ="o_Description" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="3000" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(ShortDescription),&apos;UNK&apos;,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,REPLACECHR(TRUE,ShortDescription,&apos;-&apos;,&apos; &apos;),&apos;*&apos;,&apos;&apos;),&apos;&amp;&apos;,&apos;&apos;),&apos;.&apos;,&apos; &apos;),&apos;#&apos;,&apos;&apos;),&apos;&quot;&apos;,&apos;&apos;),&apos;/&apos;,&apos;&apos;),&apos;!&apos;,&apos;&apos;),&apos;@&apos;,&apos;&apos;))" EXPRESSIONTYPE ="GENERAL" NAME ="o_ShortDescription" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(IsVehicleOperable),&apos;UNK&apos;,iif(IsVehicleOperable=1,&apos;Y&apos;,&apos;N&apos;))" EXPRESSIONTYPE ="GENERAL" NAME ="o_IsVehicleOperable" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="255" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(IsTow),&apos;UNK&apos;,iif(IsTow=1,&apos;Y&apos;,&apos;N&apos;))" EXPRESSIONTYPE ="GENERAL" NAME ="o_IsTow" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="19" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(CreateDate),&apos;01-01-1900&apos;,to_char(CreateDate,&apos;DD/MM/YYYY hh:mm:ss&apos;))" EXPRESSIONTYPE ="GENERAL" NAME ="o_CreateDate" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="string" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(ComplaintCloseDate),&apos;01-01-1900&apos;,to_char(ComplaintCloseDate,&apos;DD/MM/YYYY hh:mm:ss&apos;))" EXPRESSIONTYPE ="GENERAL" NAME ="o_ComplaintCloseDate" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(CustomerComplaint_KEY),-1,CustomerComplaint_KEY)" EXPRESSIONTYPE ="GENERAL" NAME ="o_CustomerComplaint_KEY" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(ComplaintStatus_KEY),-1,ComplaintStatus_KEY)" EXPRESSIONTYPE ="GENERAL" NAME ="o_ComplaintStatus_KEY" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(ActionType_KEY),-1,ActionType_KEY)" EXPRESSIONTYPE ="GENERAL" NAME ="o_ActioType_KEy" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(USER_KEY),-1,USER_KEY)" EXPRESSIONTYPE ="GENERAL" NAME ="o_User_KEY" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(Location_KEY),-1,Location_KEY)" EXPRESSIONTYPE ="GENERAL" NAME ="o_Location_KEY" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="integer" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="iif(isnull(ComplaintType_KEY),-1,ComplaintType_KEY)" EXPRESSIONTYPE ="GENERAL" NAME ="o_ComplaintType_KEY" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="10" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="date/time" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="SYSTIMESTAMP(&apos;MS&apos;)" EXPRESSIONTYPE ="GENERAL" NAME ="DW_CreateDate" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="29" SCALE ="9"/>
+            <TRANSFORMFIELD DATATYPE ="date/time" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" EXPRESSION ="SYSTIMESTAMP(&apos;MS&apos;)" EXPRESSIONTYPE ="GENERAL" NAME ="DW_UpdateDate" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="29" SCALE ="9"/>
+            <TRANSFORMFIELD DATATYPE ="nstring" DEFAULTVALUE ="" DESCRIPTION ="" EXPRESSION ="SETMAXVARIABLE($$v_last_max_date,CreateDate)&#xD;&#xA;" EXPRESSIONTYPE ="GENERAL" NAME ="v_last_max_date_to_variable" PICTURETEXT ="" PORTTYPE ="LOCAL VARIABLE" PRECISION ="29" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+        </TRANSFORMATION>
+        <TRANSFORMATION DESCRIPTION ="" NAME ="seq_trans" OBJECTVERSION ="1" REUSABLE ="NO" TYPE ="Sequence" VERSIONNUMBER ="1">
+            <TRANSFORMFIELD DATATYPE ="bigint" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" NAME ="NEXTVAL" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="19" SCALE ="0"/>
+            <TRANSFORMFIELD DATATYPE ="bigint" DEFAULTVALUE ="ERROR(&apos;transformation error&apos;)" DESCRIPTION ="" NAME ="CURRVAL" PICTURETEXT ="" PORTTYPE ="OUTPUT" PRECISION ="19" SCALE ="0"/>
+            <TABLEATTRIBUTE NAME ="Start Value" VALUE ="1"/>
+            <TABLEATTRIBUTE NAME ="Increment By" VALUE ="1"/>
+            <TABLEATTRIBUTE NAME ="End Value" VALUE ="9223372036854775807"/>
+            <TABLEATTRIBUTE NAME ="Current Value" VALUE ="1"/>
+            <TABLEATTRIBUTE NAME ="Cycle" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Number of Cached Values" VALUE ="0"/>
+            <TABLEATTRIBUTE NAME ="Reset" VALUE ="YES"/>
+            <TABLEATTRIBUTE NAME ="Is Current Value Shared" VALUE ="NO"/>
+            <TABLEATTRIBUTE NAME ="Tracing Level" VALUE ="Normal"/>
+            <METADATAEXTENSION DATATYPE ="NUMERIC" DESCRIPTION ="" DOMAINNAME ="User Defined Metadata Domain" ISCLIENTEDITABLE ="YES" ISCLIENTVISIBLE ="YES" ISREUSABLE ="YES" ISSHAREREAD ="NO" ISSHAREWRITE ="NO" MAXLENGTH ="0" NAME ="Extension" VALUE ="" VENDORNAME ="INFORMATICA"/>
+        </TRANSFORMATION>
+        <INSTANCE DESCRIPTION ="" NAME ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TRANSFORMATION_NAME ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TRANSFORMATION_TYPE ="Target Definition" TYPE ="TARGET"/>
+        <INSTANCE DBDNAME ="S_Aviral_RALLI" DESCRIPTION ="" NAME ="CustomerComplaintDetail" TRANSFORMATION_NAME ="CustomerComplaintDetail" TRANSFORMATION_TYPE ="Source Definition" TYPE ="SOURCE"/>
+        <INSTANCE DESCRIPTION ="" NAME ="SQ_CustomerComplaintDetail" REUSABLE ="NO" TRANSFORMATION_NAME ="SQ_CustomerComplaintDetail" TRANSFORMATION_TYPE ="Source Qualifier" TYPE ="TRANSFORMATION">
+            <ASSOCIATED_SOURCE_INSTANCE NAME ="CustomerComplaintDetail"/>
+        </INSTANCE>
+        <INSTANCE DESCRIPTION ="" NAME ="lkp_customerComplaint" REUSABLE ="NO" TRANSFORMATION_NAME ="lkp_customerComplaint" TRANSFORMATION_TYPE ="Lookup Procedure" TYPE ="TRANSFORMATION"/>
+        <INSTANCE DESCRIPTION ="" NAME ="lkp_ComplaintStatus" REUSABLE ="NO" TRANSFORMATION_NAME ="lkp_ComplaintStatus" TRANSFORMATION_TYPE ="Lookup Procedure" TYPE ="TRANSFORMATION"/>
+        <INSTANCE DESCRIPTION ="" NAME ="lkp_ActionType" REUSABLE ="NO" TRANSFORMATION_NAME ="lkp_ActionType" TRANSFORMATION_TYPE ="Lookup Procedure" TYPE ="TRANSFORMATION"/>
+        <INSTANCE DESCRIPTION ="" NAME ="lkp_ComplaintType" REUSABLE ="NO" TRANSFORMATION_NAME ="lkp_ComplaintType" TRANSFORMATION_TYPE ="Lookup Procedure" TYPE ="TRANSFORMATION"/>
+        <INSTANCE DESCRIPTION ="" NAME ="lkp_location" REUSABLE ="NO" TRANSFORMATION_NAME ="lkp_location" TRANSFORMATION_TYPE ="Lookup Procedure" TYPE ="TRANSFORMATION"/>
+        <INSTANCE DESCRIPTION ="" NAME ="lkp_User" REUSABLE ="NO" TRANSFORMATION_NAME ="lkp_User" TRANSFORMATION_TYPE ="Lookup Procedure" TYPE ="TRANSFORMATION"/>
+        <INSTANCE DESCRIPTION ="" NAME ="EXPTRANS" REUSABLE ="NO" TRANSFORMATION_NAME ="EXPTRANS" TRANSFORMATION_TYPE ="Expression" TYPE ="TRANSFORMATION"/>
+        <INSTANCE DESCRIPTION ="" NAME ="seq_trans" REUSABLE ="NO" TRANSFORMATION_NAME ="seq_trans" TRANSFORMATION_TYPE ="Sequence" TYPE ="TRANSFORMATION"/>
+        <CONNECTOR FROMFIELD ="DW_CreateDate" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="DW_CreatedDate" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="DW_UpdateDate" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="DW_UpdatedDate" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_CustomerComplaintDetail_ID" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="CustomerComplaintDetail_ID" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="NEXTVAL" FROMINSTANCE ="seq_trans" FROMINSTANCETYPE ="Sequence" TOFIELD ="CustomerComplaintDetail_KEY" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_ComplaintStatus_KEY" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="ComplaintStatus" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_ActioType_KEy" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="ActionType" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_ComplaintType_KEY" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="ComplaintType" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_Description" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="Description" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_ShortDescription" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="ShortDescription" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_IsVehicleOperable" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="IsVehicleOperable" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_IsTow" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="IsTow" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_CreateDate" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="CreateDate" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_Location_KEY" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="ServiceLocation_KEY" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_ComplaintCloseDate" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="ComplaintCloseDate" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_User_KEY" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="CreatedByUser_KEY" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="o_CustomerComplaint_KEY" FROMINSTANCE ="EXPTRANS" FROMINSTANCETYPE ="Expression" TOFIELD ="CustomerComplaint_KEY" TOINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev" TOINSTANCETYPE ="Target Definition"/>
+        <CONNECTOR FROMFIELD ="CustomerComplaintDetail_ID" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="CustomerComplaintDetail_ID" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="CustomerComplaintID" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="CustomerComplaintID" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="ComplaintStatus" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="ComplaintStatus" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="ComplaintType" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="ComplaintType" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="ActionType" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="ActionType" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="Description" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="Description" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="ShortDescription" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="ShortDescription" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="IsVehicleOperable" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="IsVehicleOperable" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="IsTow" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="IsTow" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="ServiceLocationID" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="ServiceLocationID" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="CreateDate" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="CreateDate" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="ComplaintCloseDate" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="ComplaintCloseDate" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="CreatedByUserID" FROMINSTANCE ="CustomerComplaintDetail" FROMINSTANCETYPE ="Source Definition" TOFIELD ="CreatedByUserID" TOINSTANCE ="SQ_CustomerComplaintDetail" TOINSTANCETYPE ="Source Qualifier"/>
+        <CONNECTOR FROMFIELD ="CustomerComplaintID" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="src_CustomerComplaintID1" TOINSTANCE ="lkp_customerComplaint" TOINSTANCETYPE ="Lookup Procedure"/>
+        <CONNECTOR FROMFIELD ="ComplaintStatus" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="src_ComplaintStatus1" TOINSTANCE ="lkp_ComplaintStatus" TOINSTANCETYPE ="Lookup Procedure"/>
+        <CONNECTOR FROMFIELD ="ActionType" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="ActionType1" TOINSTANCE ="lkp_ActionType" TOINSTANCETYPE ="Lookup Procedure"/>
+        <CONNECTOR FROMFIELD ="ComplaintType" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="ComplaintType1" TOINSTANCE ="lkp_ComplaintType" TOINSTANCETYPE ="Lookup Procedure"/>
+        <CONNECTOR FROMFIELD ="ServiceLocationID" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="ServiceLocationID" TOINSTANCE ="lkp_location" TOINSTANCETYPE ="Lookup Procedure"/>
+        <CONNECTOR FROMFIELD ="CreatedByUserID" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="CreatedByUserID" TOINSTANCE ="lkp_User" TOINSTANCETYPE ="Lookup Procedure"/>
+        <CONNECTOR FROMFIELD ="CustomerComplaintDetail_ID" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="CustomerComplaintDetail_ID" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="Description" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="Description" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="ShortDescription" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="ShortDescription" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="IsVehicleOperable" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="IsVehicleOperable" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="IsTow" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="IsTow" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="CreateDate" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="CreateDate" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="ComplaintCloseDate" FROMINSTANCE ="SQ_CustomerComplaintDetail" FROMINSTANCETYPE ="Source Qualifier" TOFIELD ="ComplaintCloseDate" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="CustomerComplaint_KEY" FROMINSTANCE ="lkp_customerComplaint" FROMINSTANCETYPE ="Lookup Procedure" TOFIELD ="CustomerComplaint_KEY" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="ComplaintStatus_KEY" FROMINSTANCE ="lkp_ComplaintStatus" FROMINSTANCETYPE ="Lookup Procedure" TOFIELD ="ComplaintStatus_KEY" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="ActionType_KEY" FROMINSTANCE ="lkp_ActionType" FROMINSTANCETYPE ="Lookup Procedure" TOFIELD ="ActionType_KEY" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="ComplaintType_KEY" FROMINSTANCE ="lkp_ComplaintType" FROMINSTANCETYPE ="Lookup Procedure" TOFIELD ="ComplaintType_KEY" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="Location_KEY" FROMINSTANCE ="lkp_location" FROMINSTANCETYPE ="Lookup Procedure" TOFIELD ="Location_KEY" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <CONNECTOR FROMFIELD ="USER_KEY" FROMINSTANCE ="lkp_User" FROMINSTANCETYPE ="Lookup Procedure" TOFIELD ="USER_KEY" TOINSTANCE ="EXPTRANS" TOINSTANCETYPE ="Expression"/>
+        <TARGETLOADORDER ORDER ="1" TARGETINSTANCE ="FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev"/>
+        <MAPPINGVARIABLE AGGFUNCTION ="MAX" DATATYPE ="string" DEFAULTVALUE ="&apos;1900-01-01&apos;" DESCRIPTION ="" ISEXPRESSIONVARIABLE ="NO" ISPARAM ="NO" NAME ="$$v_last_max_date" PRECISION ="20" SCALE ="0" USERDEFINED ="YES"/>
+        <ERPINFO/>
+    </MAPPING>
+</FOLDER>
+</REPOSITORY>
+</POWERMART>

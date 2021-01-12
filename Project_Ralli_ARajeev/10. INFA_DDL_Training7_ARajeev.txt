@@ -1,0 +1,278 @@
+--Loading Dimension Tables
+--loading Customer Table 
+
+CREATE TABLE DIM_RALLI_INFA_Customer_ARajeev
+(
+    Customer_KEY   integer,
+    Customer_id    integer,
+    Firstname      varchar(255),
+    Lastname       varchar(255),
+    Contactphone   varchar(255),
+    Contactaddress varchar(255),
+    Contactemail   varchar(255),
+    DW_CreatedDate date,
+    DW_UpdatedDate date
+);
+
+
+--loading Location table
+
+CREATE TABLE DIM_RALLI_INFA_Location_ARajeev
+(
+    Location_KEY                    int,
+    LocationID                      int,
+    LocationType                    nvarchar(255),
+    LocationDescription             nvarchar(255),
+    Region                          nvarchar(255),
+    RegionManagerUser_KEY           int,
+    Address                         nvarchar(255),
+    City                            nvarchar(255),
+    PostalCode                      nvarchar(255),
+    PhoneNumber                     nvarchar(255),
+    Fax                             nvarchar(255),
+    Email                           nvarchar(255),
+    StoreManagerUser_KEY            int,
+    IsDelegateServiceCenter         nvarchar(255),
+    Enabled                         nvarchar(255),
+    IsPartWareHouse                 nvarchar(255),
+    FRTRate                         nvarchar(255),
+    CurrencyCode                    nvarchar(255),
+    Market                          nvarchar(255),
+    CriticalPartReportLocationTitle nvarchar(255),
+    IsMRBWareHouse                  nvarchar(255),
+    WeekDayWorkHours                nvarchar(255),
+    IsEngineering                   nvarchar(255),
+    PreferredLanguage               nvarchar(255),
+    DW_CreatedDate                  datetime,
+    DW_UpdateDate                   datetime
+);
+
+
+--loading users table
+
+CREATE TABLE DIM_RALLI_INFA_Users_ARajeev
+(
+    USER_KEY       integer,
+    User_ID        integer,
+    Firstname      varchar(255),
+    Lastname       varchar(255),
+    Displayname    varchar(255),
+    Department     varchar(255),
+    Title          varchar(255),
+    Manager        varchar(255),
+    Email          varchar(255),
+    Enabled        varchar(255),
+    Division       varchar(255),
+    ManagerUserID  integer,
+    Version        integer,
+    Status         varchar(255),
+    DW_CreatedDate date,
+    DW_UpdatedDate date
+);
+
+
+--loading Part table
+
+CREATE TABLE DIM_RALLI_INFA_Part_ARajeev
+(
+    Part_KEY               int,
+    PartId                 int,
+    PartNumber             nvarchar(255),
+    PartSystem             nvarchar(255),
+    PartSubSystem          nvarchar(255),
+    SupplierCode           nvarchar(15),
+    CurrentName            nvarchar(255),
+    PreviousName1          nvarchar(255),
+    PreviousName2          nvarchar(255),
+    Description            nvarchar(255),
+    PlanningLeadtime       nvarchar(15),
+    UnitPrice              nvarchar(15),
+    Orderpoint             nvarchar(15),
+    SafetyStockQuantity    nvarchar(15),
+    FabricatedFlag         nvarchar(15),
+    PurchasedFlag          nvarchar(15),
+    StockedFlag            nvarchar(15),
+    InspectionRequiredFlag nvarchar(15),
+    HazardousMaterialFlag  nvarchar(15),
+    Version                nvarchar(255),
+    ENABLED                nvarchar(15),
+    DW_CreatedDate         datetime,
+    DW_UpdatedDate         datetime
+);
+
+
+--locating VehicleVIN table
+
+CREATE TABLE DIM_RALLI_INFA_VehicleVIN_ARajeev
+(
+    VehicleVIN_KEY           int,
+    VehicleVINID             int,
+    VehicleVIN               nvarchar(255),
+    VehicleModelCode         nvarchar(255),
+    VehicleModel             nvarchar(255),
+    ModelCategory            nvarchar(255),
+    ModelYear                int,
+    DriveOrientation         nvarchar(255),
+    Actualdeliveryeddate     nvarchar(255),
+    Enabled                  nvarchar(15),
+    NearestServiceLocationID int,
+    StartDate                datetime,
+    EndDate                  datetime,
+    FactoryGateDate          nvarchar(255),
+    VehicleColor             nvarchar(19),
+    VehicleTitle             nvarchar(255),
+    LastOdometer             nvarchar(15),
+    InventoryVehicle         nvarchar(15),
+    NewUsed                  nvarchar(255),
+    Market                   nvarchar(255),
+    DeliveryRegion           nvarchar(255),
+    OdometerType             nvarchar(255),
+    DW_CreateDate            datetime,
+    DW_UpdateDate            datetime
+);
+
+
+
+
+--Loading Fact Table
+--loadin customerComplaint
+
+CREATE TABLE FACT_RALLI_INFA_CustomerComplaint_ARajeev
+(
+    CustomerComplaint_KEY int,
+    CustomerComplaintID   int,
+    VehicleVIN_KEY        int,
+    Location_KEY          int,
+    Enabled               varchar(15),
+    CreatedDate           varchar(23),
+    Customer_KEY          int,
+    DW_CreatedDate        datetime,
+    DW_UpdatedDate        datetime
+);
+
+
+--loading CustomerComplaintDetail
+
+CREATE TABLE FACT_RALLI_INFA_CustomerComplaintDetail_ARajeev
+(
+    CustomerComplaintDetail_KEY int,
+    CustomerComplaintDetail_ID  int,
+    CustomerComplaint_KEY       int,
+    ComplaintStatus             int,
+    ComplaintType               int,
+    ActionType                  int,
+    Description                 varchar(3000),
+    ShortDescription            varchar(255),
+    IsVehicleOperable           varchar(15),
+    IsTow                       varchar(15),
+    ServiceLocation_KEY         int,
+    CreateDate                  varchar(255),
+    ComplaintCloseDate          varchar(255),
+    CreatedByUser_KEY           int,
+    DW_CreatedDate              datetime,
+    DW_UpdatedDate              datetime
+);
+
+
+--loading Orders
+
+CREATE TABLE FACT_RALLI_INFA_Orders_ARajeev
+(
+    Order_KEY                 int,
+    OrderID                   int,
+    OrderNumber               nvarchar(255),
+    DateTime                  nvarchar(23),
+    VIN_KEY                   int,
+    Odometer                  nvarchar(15),
+    ServiceAdvisorUser_KEY    int,
+    ServiceLocation_KEY       int,
+    PaymentType_KEY           int,
+    PaymentRecievedByUser_KEY int,
+    OrderStatus_KEY           int,
+    TotalPartPrice            money,
+    TotalLaborAmount          money,
+    TotalTaxAmount            money,
+    TotalAmount               money,
+    IsCustomerPickUp          nvarchar(15),
+    IsRangerDrop              nvarchar(15),
+    ShippingAmount            money,
+    OrderCloseDate            nvarchar(19),
+    DiscountAmount            money,
+    ReadyForInvoiceDate       nvarchar(19),
+    IsRepeatedIssueReviewed   nvarchar(15),
+    IsReadyForDelivery        nvarchar(15),
+    LeadTechnicianID          nvarchar(255),
+    IsCPO                     nvarchar(15),
+    IsCPOCompliant            nvarchar(15),
+    Customer_KEY              int,
+    DW_CreateDate             datetime,
+    DW_UpdateDate             datetime
+);
+
+
+--loading OrderJob
+
+CREATE TABLE "FACT_RALLI_INFA_OrderJob_ARajeev "
+(
+    OrderJob_KEY            int,
+    OrderJobID              int,
+    Order_KEY               int,
+    OrderJobStatus_KEY      int,
+    LaborPrice              money,
+    LaborAmount             money,
+    TotalAmount             money,
+    TotalPartPrice          money,
+    PayMethod_KEY           int,
+    ComplaintNarrative      nvarchar(2500),
+    CauseNarrative          nvarchar(2500),
+    Enabled                 nvarchar(255),
+    CustomerConcernDetailID nvarchar(255),
+    VOR                     nvarchar(255),
+    OrderJobCloseDate       nvarchar(19),
+    Category                nvarchar(255),
+    IsDuplicatedSymptom     nvarchar(255),
+    IsDuplicatedCorrection  nvarchar(255),
+    IsTow                   nvarchar(255),
+    DW_Createdate           datetime,
+    DW_UpdateDate           datetime
+);
+
+
+--loading orderJobServiceCorrction
+
+CREATE TABLE FACT_RALLI_INFA_OrderJobServiceCorrection_ARajeev
+(
+    OrderJobServiceCorrection_KEY int,
+    OrderJobServiceCorrectionId   int,
+    OrderJob_KEY                  int,
+    ServiceCatalogCode            nvarchar(255),
+    ServiceCatalog                nvarchar(255),
+    CorrectionNarrative           nvarchar(4000),
+    CorrectionLaborHours          decimal(18,4),
+    CorrectionActualLaborHours    decimal(18,4),
+    CorrectionLaborPrice          money,
+    IsWorkCompleted               nvarchar(255),
+    Enabled                       nvarchar(255),
+    DW_CreateDate                 datetime,
+    DW_UpdateDate                 datetime
+);
+
+
+--loadoing orderjobServiceCorrectionpart
+
+CREATE TABLE FACT_RALLI_INFA_OrderJobServiceCorrectionPart_ARajeev
+(
+    OrderJobServiceCorrectionPart_KEY int,
+    OrderJobPartId                    int,
+    OrderJobServiceCorrection_KEY     int,
+    Part_KEY                          int,
+    Quantity                          decimal(18,4),
+    Unitprice                         money,
+    Enabled                           nvarchar(255),
+    Partcost                          money,
+    IsCustomPart                      nvarchar(255),
+    InventoryQuantityConsumed         decimal(18,4),
+    IsInventoryConsumed               nvarchar(255),
+    DW_CreateDate                     datetime,
+    DW_UpdateDate                     datetime
+);
